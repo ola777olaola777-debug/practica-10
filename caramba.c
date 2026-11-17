@@ -3,13 +3,14 @@ Practica 10*/
 #include<stdio.h>
 int main()
 {
- int i,j,a[5][5];
- for (i=0 ; i<5 ; i++)//Representa al renglón del arreglo
+ int matriz[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+ int i, j;
+ printf("Imprimir Matriz\n");
+ for (i=0 ; i<3 ; i++) //Representa al renglón del arreglo
  {
- for (j=0 ; j<5 ; j++)//Representa a la columna del arreglo
+ for (j=0 ; j<3 ; j++)//Representa a la columna del arreglo
  {
- a[i][j]=i+j;
- printf("\t%d, ",a[i][j]);
+ printf("%d, ",matriz[i][j]);
  }
  printf("\n");
  }
